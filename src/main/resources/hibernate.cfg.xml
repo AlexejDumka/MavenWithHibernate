@@ -21,7 +21,6 @@
         <property name="hibernate.format_sql">true</property>
         <!-- TRANSACTION_READ_COMMITTED -->
         <property name="hibernate.connection.isolation">2</property>
-<!--        <property name="hibernate.cache.use_second_level_cache">true</property>-->
         <!-- Entity mappings -->
         <mapping class="com.example.entity.Jobseeker" />
         <mapping class="com.example.entity.Job" />
