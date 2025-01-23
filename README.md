@@ -6,7 +6,8 @@ This project demonstrates the use of Hibernate for managing entity persistence, 
 - Custom validation using `@NotEmpty` annotation.
 - Validation groups for conditional validation.
 - Optimistic and pessimistic locking for concurrent data access.
-- Entity examples such as `TestEntity`.
+- Relationship annotations like `@OneToOne`, `@OneToMany`, and `@ManyToMany`.
+- Query types like basic queries, HQL (Hibernate Query Language), and native SQL queries.
 
 ## Features
 
