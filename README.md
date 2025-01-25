@@ -10,7 +10,6 @@ This project demonstrates the use of Hibernate for managing entity persistence, 
 - Query types like basic queries, HQL (Hibernate Query Language), and native SQL queries.
 
 ## Features
-
 ### Custom Validation
 - Implements a custom annotation `@NotEmpty` to ensure that string fields are not empty or null.
 - Provides support for validation groups (`BasicValidation` and `AdvancedValidation`) for conditional validation.
@@ -18,6 +17,23 @@ This project demonstrates the use of Hibernate for managing entity persistence, 
 ### Locking Mechanisms
 - **Optimistic Locking**: Uses the `@Version` annotation to manage concurrent updates to entities.
 - **Pessimistic Locking**: Uses `LockModeType.PESSIMISTIC_WRITE` to prevent concurrent updates.
+
+### Relationship Annotations Demonstrated
+This project includes examples of common JPA relationship annotations:
+- **@OneToOne**: Demonstrated in `TestEntity` for linking one-to-one relationships like a `Jobseeker` and `Resume`.
+- **@OneToMany** and **@ManyToOne**: Used to map collections and their parent entities, such as `Job` ↔ `Application` relationships.
+- **@ManyToMany**: Demonstrated with skills and jobs, showcasing a many-to-many mapping with a join table.
+
+### Query Types Demonstrated
+This project includes examples of the following query types:
+- **Basic Queries**: Retrieving entities by ID or filtering by attributes.
+- **HQL (Hibernate Query Language)**: Projection queries, criteria-based filtering, and custom conditions.
+- **Native SQL Queries**: Using raw SQL for database-specific operations.
+- **Aggregate Queries**: Calculating sums, averages, counts, etc.
+- **Join Queries**: Inner join, left outer join, and full join examples.
+- **Subqueries**: Both correlated and uncorrelated subqueries are demonstrated.
+
+
 
 ## Prerequisites
 To run this project, ensure you have the following installed:
@@ -52,23 +68,6 @@ To run this project, ensure you have the following installed:
     - Custom validation is applied to entities.
     - Entities are persisted in the H2 in-memory database.
     - Examples of optimistic and pessimistic locking are executed.
-
-### Relationship Annotations Demonstrated
-This project includes examples of common JPA relationship annotations:
-- **@OneToOne**: Demonstrated in `TestEntity` for linking one-to-one relationships like a `Jobseeker` and `Resume`.
-- **@OneToMany** and **@ManyToOne**: Used to map collections and their parent entities, such as `Job` ↔ `Application` relationships.
-- **@ManyToMany**: Demonstrated with skills and jobs, showcasing a many-to-many mapping with a join table.
-
-
-
-### Query Types Demonstrated
-This project includes examples of the following query types:
-- **Basic Queries**: Retrieving entities by ID or filtering by attributes.
-- **HQL (Hibernate Query Language)**: Projection queries, criteria-based filtering, and custom conditions.
-- **Native SQL Queries**: Using raw SQL for database-specific operations.
-- **Aggregate Queries**: Calculating sums, averages, counts, etc.
-- **Join Queries**: Inner join, left outer join, and full join examples.
-- **Subqueries**: Both correlated and uncorrelated subqueries are demonstrated.
 
 
 ## File Structure
