@@ -53,8 +53,6 @@ To run this project, ensure you have the following installed:
     - Entities are persisted in the H2 in-memory database.
     - Examples of optimistic and pessimistic locking are executed.
 
-## Examples
-
 ### Relationship Annotations Demonstrated
 This project includes examples of common JPA relationship annotations:
 - **@OneToOne**: Demonstrated in `TestEntity` for linking one-to-one relationships like a `Jobseeker` and `Resume`.
